@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location d'Objets - MonSiteLocation.com</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 0.5em 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            padding: 0.5em 1em;
+            text-decoration: none;
+            display: inline-block;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+        .hero {
+            background: url('https://via.placeholder.com/1200x400?text=Trouvez+vos+objets+ici') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+            margin-bottom: 20px;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 1.2em;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #4CAF50;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .item-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            overflow: hidden;
+            text-align: center;
+            padding-bottom: 15px;
+        }
+        .item-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 1px solid #eee;
+        }
+        .item-card h3 {
+            margin: 15px 0 10px;
+            color: #333;
+        }
+        .item-card p {
+            color: #666;
+            padding: 0 15px;
+            font-size: 0.9em;
+        }
+        .item-card .price {
+            font-weight: bold;
+            color: #4CAF50;
+            margin-top: 10px;
+            font-size: 1.1em;
+        }
+        .item-card button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 15px;
+            font-size: 1em;
+        }
+        .item-card button:hover {
+            background-color: #45a049;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MonSiteLocation.com</h1>
+        <p>Votre plateforme pour louer et prêter facilement</p>
+    </header>
+
+    <nav>
+        <a href="#accueil">Accueil</a>
+        <a href="#objets">Nos Objets</a>
+        <a href="#comment-ca-marche">Comment ça marche ?</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="hero" id="accueil">
+        <h1>Trouvez l'objet dont vous avez besoin, louez-le !</h1>
+        <p>Des outils aux équipements de loisirs, tout est à portée de main.</p>
+    </div>
+
+    <div class="container">
+        <h2 class="section-title" id="objets">Nos Objets Populaires</h2>
+        <div class="grid">
+            <div class="item-card">
+                <img src="https://via.placeholder.com/300x200?text=Perceuse" alt="Perceuse">
+                <h3>Perceuse sans fil</h3>
+                <p>Idéale pour tous vos petits travaux de bricolage.</p>
+                <div class="price">10€ / jour</div>
+                <button>Louer</button>
+            </div>
+            <div class="item-card">
+                <img src="https://via.placeholder.com/300x200?text=Tondeuse" alt="Tondeuse">
+                <h3>Tondeuse électrique</h3>
+                <p>Entretenez votre jardin sans effort.</p>
+                <div class="price">25€ / jour</div>
+                <button>Louer</button>
+            </div>
+            <div class="item-card">
+                <img src="https://via.placeholder.com/300x200?text=Appareil+photo" alt="Appareil Photo">
+                <h3>Appareil photo reflex</h3>
+                <p>Capturez vos meilleurs moments avec qualité.</p>
+                <div class="price">30€ / jour</div>
+                <button>Louer</button>
+            </div>
+            <div class="item-card">
+                <img src="https://via.placeholder.com/300x200?text=Console+de+jeu" alt="Console de jeu">
+                <h3>Console de jeu PS5</h3>
+                <p>Des heures de divertissement garanties.</p>
+                <div class="price">15€ / jour</div>
+                <button>Louer</button>
+            </div>
+            <div class="item-card">
+                <img src="https://via.placeholder.com/300x200?text=Remorque" alt="Remorque">
+                <h3>Petite Remorque</h3>
+                <p>Parfaite pour vos déménagements ou transport de déchets.</p>
+                <div class="price">20€ / jour</div>
+                <button>Louer</button>
+            </div>
+            <div class="item-card">
+                <img src="https://via.placeholder.com/300x200?text=Projecteur" alt="Projecteur">
+                <h3>Vidéoprojecteur HD</h3>
+                <p>Pour vos soirées cinéma ou présentations professionnelles.</p>
+                <div class="price">25€ / jour</div>
+                <button>Louer</button>
+            </div>
+        </div>
+
+        <h2 class="section-title" id="comment-ca-marche">Comment ça marche ?</h2>
+        <div class="grid">
+            <div class="item-card">
+                <h3>1. Recherchez</h3>
+                <p>Utilisez notre barre de recherche pour trouver l'objet dont vous avez besoin près de chez vous.</p>
+            </div>
+            <div class="item-card">
+                <h3>2. Réservez</h3>
+                <p>Contactez le propriétaire, réservez l'objet pour la durée souhaitée.</p>
+            </div>
+            <div class="item-card">
+                <h3>3. Profitez</h3>
+                <p>Récupérez l'objet, utilisez-le et ramenez-le en toute simplicité.</p>
+            </div>
+        </div>
+
+        <h2 class="section-title" id="contact">Contactez-nous</h2>
+        <p style="text-align: center;">Des questions ? N'hésitez pas à nous contacter !</p>
+        <p style="text-align: center;">Email : contact@monsitelocation.com</p>
+        <p style="text-align: center;">Téléphone : 01 23 45 67 89</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 MonSiteLocation.com. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
