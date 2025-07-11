@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location d'Objets - MonSiteLocation.com | Louez Facilement !</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        <link rel="stylesheet" href="style.css">
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MonSiteLocation.com</h1>
+        <p>Votre plateforme pour louer et prêter facilement <br> <span style="font-size: 0.9em; opacity: 0.9;">Accès simple à tout ce dont vous avez besoin, quand vous en avez besoin.</span></p>
+    </header>
+
+    <nav>
+        <a href="#accueil">Accueil</a>
+        <a href="#objets">Découvrir nos Objets</a>
+        <a href="#comment-ca-marche">Fonctionnement</a>
+        <a href="#temoignages">Témoignages</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="hero" id="accueil">
+        <h1>Trouvez l'objet dont vous avez besoin, <br> louez-le et réalisez vos projets !</h1>
+        <p>Des outils aux équipements de loisirs, en passant par l'électroménager : tout est à portée de main, de manière flexible et économique.</p>
+        <button onclick="location.href='#objets'" style="background-color: #ff5722; color: white; border: none; padding: 15px 30px; border-radius: 30px; font-size: 1.2em; cursor: pointer; margin-top: 30px; transition: background-color 0.3s ease, transform 0.2s ease;">
+            Je trouve mon objet !
+        </button>
+    </div>
+
+    <div class="container">
+        <h2 class="section-title" id="objets">Nos Objets Populaires</h2>
+        <div class="grid">
+            <div class="item-card">
+                <div class="badge">Populaire</div> <img src="https://images.unsplash.com/photo-1594957106093-6058e5a7b45f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTIyMDR8MHwxfHNlYXJjaHwzfHxkcmlsbHxlbnwwfHx8fDE3MTkxMTk2OTB8MA&ixlib=rb-4.0.3&q=80&w=1080" alt="Perceuse sans fil">
+                <h3>Perceuse sans fil</h3>
+                <p>Idéale pour tous vos petits travaux de bricolage et d'assemblage de meubles.</p>
+                <div class="price">10€ / jour</div>
+                <button>Louer</button>
+            </div>
+            <div class="item-card">
+                <img src="https://images.unsplash.com/photo-1627771741517-5a1e6a6a4a9c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTIyMDR8MHwxfHNlYXJjaHw3fHxtb3dlciUyMGxhd258ZW58MHx8fHwxNzE5MTE5NzE5fDA&ixlib=rb-4.0.3&q=80&w=1080" alt="Tondeuse électrique">
+                <h3>Tondeuse électrique</h3>
+                <p>Entretenez votre jardin sans effort, pour une pelouse impeccable et saine.</p>
+                <div class="price">25€ / jour</div>
+                <button>Louer</button>
+            </div>
+            <div class="item-card">
+                <div class="badge">Nouveau</div> <img src="https://images.unsplash.com/photo-1621531093156-78e71b26f5f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTIyMDR8MHwxfHNlYXJjaHwxNHx8Y2FtZXJhfGVufDB8fHx8MTcxOTExOTczNnww&ixlib=rb-4.0.3&q=80&w=1080" alt="Appareil Photo">
+                <h3>Appareil photo reflex</h3>
+                <p>Capturez vos meilleurs moments avec une qualité professionnelle lors de vos événements.</p>
+                <div class="price">30€ / jour</div>
+                <button>Louer</button>
+            </div>
+            <div class="item-card">
+                <img src="https://images.unsplash.com/photo-1606144042614-b153e706788b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTIyMDR8MHwxfHNlYXJjaHwyMHx8cGxheXN0YXRpb24lMjA1fGVufDB8fHx8MTcxOTExOTc2OHww&ixlib=rb-4.0.3&q=80&w=1080" alt="Console de jeu">
+                <h3>Console de jeu PS5</h3>
+                <p>Des heures de divertissement garanties pour vos soirées entre amis ou en famille.</p>
+                <div class="price">15€ / jour</div>
+                <button>Louer</button>
+            </div>
+            <div class="item-card">
+                <img src="https://images.unsplash.com/photo-1582230491871-ed919ed7c4c3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTIyMDR8MHwxfHNlYXJjaHw3fHx0cmFpbGVyfGVufDB8fHx8MTcxOTExOTc5NXww&ixlib=rb-4.0.3&q=80&w=1080" alt="Remorque">
+                <h3>Petite Remorque</h3>
+                <p>Parfaite pour vos déménagements, transport de déchets verts ou matériaux volumineux.</p>
+                <div class="price">20€ / jour</div>
+                <button>Louer</button>
+            </div>
+            <div class="item-card">
+                <img src="https://images.unsplash.com/photo-1541804791349-bc1ee0987c2b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTIyMDR8MHwxfHNlYXJjaHw1fHxwaG90b3xlbnwwfHx8fDE3MTkxMTk4MDd8MA&ixlib=rb-4.0.3&q=80&w=1080" alt="Projecteur">
+                <h3>Vidéoprojecteur HD</h3>
+                <p>Pour vos soirées cinéma mémorables, présentations professionnelles ou événements.</p>
+                <div class="price">25€ / jour</div>
+                <button>Louer</button>
+            </div>
+        </div>
+
+        <h2 class="section-title" id="comment-ca-marche">Comment ça marche ?</h2>
+        <div class="grid">
+            <div class="how-it-works-card">
+                <h3>1. Recherchez</h3>
+                <p>Utilisez notre barre de recherche intuitive pour trouver l'objet dont vous avez besoin, localement.</p>
+            </div>
+            <div class="how-it-works-card">
+                <h3>2. Réservez</h3>
+                <p>Contactez le propriétaire directement via la plateforme pour convenir des modalités de location.</p>
+            </div>
+            <div class="how-it-works-card">
+                <h3>3. Profitez</h3>
+                <p>Récupérez l'objet, utilisez-le pour votre projet, puis ramenez-le en toute simplicité.</p>
+            </div>
+        </div>
+
+        ---
+
+        <h2 class="section-title" id="temoignages">Ce que nos utilisateurs en disent</h2>
+        <div class="grid">
+            <div class="item-card" style="padding: 25px;">
+                <p style="font-style: italic;">"MonSiteLocation m'a sauvé ! J'avais besoin d'une perceuse pour un après-midi, et j'ai trouvé l'objet parfait près de chez moi. Simple et efficace !"</p>
+                <p><strong>— Marine L.</strong> (Paris)</p>
+            </div>
+            <div class="item-card" style="padding: 25px;">
+                <p style="font-style: italic;">"J'ai pu louer une tondeuse sans me ruiner, ce site est génial pour le partage et l'économie locale. Je recommande vivement !"</p>
+                <p><strong>— Julien D.</strong> (Lyon)</p>
+            </div>
+            <div class="item-card" style="padding: 25px;">
+                <p style="font-style: italic;">"Une solution écologique et économique ! J'ai loué un vidéoprojecteur pour ma soirée film, c'était parfait. Merci MonSiteLocation !"</p>
+                <p><strong>— Sophie M.</strong> (Marseille)</p>
+            </div>
+        </div>
+
+        ---
+
+        <h2 class="section-title" id="contact">Contactez-nous</h2>
+        <p style="text-align: center; font-size: 1.1em; max-width: 600px; margin: 20px auto 30px;">
+            Une question sur un objet, sur le fonctionnement ou une suggestion ? N'hésitez pas à nous contacter, notre équipe est là pour vous aider !
+        </p>
+        <p style="text-align: center; font-size: 1.2em; font-weight: bold;">
+            Email : <a href="mailto:contact@monsitelocation.com" style="color: #4CAF50; text-decoration: none;">contact@monsitelocation.com</a>
+        </p>
+        <p style="text-align: center; font-size: 1.2em; font-weight: bold; margin-bottom: 30px;">
+            Téléphone : <a href="tel:+33123456789" style="color: #4CAF50; text-decoration: none;">01 23 45 67 89</a>
+        </p>
+        </div>
+
+    <footer>
+        <p>&copy; 2025 MonSiteLocation.com. Tous droits réservés.</p>
+        <p>
+            <a href="#" style="color: white; text-decoration: none; margin: 0 10px;">Politique de confidentialité</a> |
+            <a href="#" style="color: white; text-decoration: none; margin: 0 10px;">Conditions d'utilisation</a>
+        </p>
+    </footer>
+</body>
+</html>
