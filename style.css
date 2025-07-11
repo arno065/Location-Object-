@@ -1,0 +1,222 @@
+/* ... (ton CSS existant) ... */
+
+body {
+    font-family: 'Poppins', sans-serif; /* Utilise une police plus moderne */
+    margin: 0;
+    padding: 0;
+    background-color: #eef2f7; /* Couleur de fond plus douce */
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #4CAF50, #2e7d32); /* Dégradé pour le header */
+    color: white;
+    padding: 1.5em 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+nav {
+    background-color: #2c3e50; /* Couleur plus foncée pour la navigation */
+    padding: 0.7em 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+nav a {
+    color: white;
+    padding: 0.7em 1.2em;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transitions douces */
+}
+nav a:hover {
+    background-color: #34495e;
+    transform: translateY(-2px); /* Léger soulèvement au survol */
+}
+
+.hero {
+    /* Utilise une image de fond plus inspirante si possible, par exemple des personnes utilisant différents objets */
+    background: url('https://images.unsplash.com/photo-1542330952-acd457b29d8f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTIyMDR8MHwxfHNlYXJjaHwxNXx8cmVudGFsJTIwZXF1aXBtZW50fGVufDB8fHx8MTcxOTExOTU4MXww&ixlib=rb-4.0.3&q=80&w=1080') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 120px 0;
+    margin-bottom: 30px;
+    position: relative; /* Pour le calque de couleur */
+    box-shadow: inset 0 -10px 20px rgba(0,0,0,0.2);
+}
+.hero::before { /* Calque semi-transparent pour améliorer la lisibilité du texte */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+.hero h1, .hero p {
+    position: relative;
+    z-index: 2;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Ombre pour le texte */
+}
+.hero h1 {
+    font-size: 3.8em; /* Plus grand */
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+.hero p {
+    font-size: 1.4em; /* Plus grand */
+    max-width: 700px;
+    margin: 0 auto 20px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #2e7d32; /* Couleur plus foncée pour les titres de section */
+    font-size: 2.5em;
+    position: relative;
+    padding-bottom: 10px;
+}
+.section-title::after { /* Soulignement animé */
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: #4CAF50;
+    border-radius: 5px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px; /* Espacement plus grand */
+}
+
+.item-card {
+    background-color: white;
+    border-radius: 12px; /* Bords plus arrondis */
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08); /* Ombre plus douce et prononcée */
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transitions au survol */
+    position: relative; /* Pour le badge */
+}
+.item-card:hover {
+    transform: translateY(-8px); /* Soulèvement prononcé au survol */
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15); /* Ombre plus intense */
+}
+.item-card img {
+    width: 100%;
+    height: 220px; /* Hauteur légèrement augmentée */
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+    transition: transform 0.3s ease; /* Zoom sur l'image au survol */
+}
+.item-card:hover img {
+    transform: scale(1.03);
+}
+.item-card h3 {
+    margin: 20px 0 10px;
+    color: #2c3e50;
+    font-size: 1.4em;
+}
+.item-card p {
+    color: #666;
+    padding: 0 20px;
+    font-size: 1em;
+    min-height: 45px; /* Assure une hauteur minimale pour la description */
+}
+.item-card .price {
+    font-weight: bold;
+    color: #4CAF50;
+    margin-top: 15px;
+    font-size: 1.3em;
+    letter-spacing: 0.5px;
+}
+.item-card button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 30px; /* Boutons pill-shaped */
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.item-card button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+/* Nouveau style pour les badges "Populaire" / "Nouveau" */
+.item-card .badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #ff5722; /* Orange vif */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-transform: uppercase;
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.how-it-works-card { /* Style spécifique pour les cartes "Comment ça marche" */
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+    overflow: hidden;
+    text-align: center;
+    padding: 30px; /* Plus de padding */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.how-it-works-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+.how-it-works-card h3 {
+    color: #4CAF50;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+.how-it-works-card p {
+    color: #555;
+    font-size: 1.1em;
+}
+
+
+footer {
+    background-color: #2c3e50; /* Couleur du footer assortie à la nav */
+    color: white;
+    text-align: center;
+    padding: 1.5em 0;
+    margin-top: 50px;
+    font-size: 0.9em;
+}
+
+/* Responsive Design de base */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+    .hero h1 {
+        font-size: 2.5em;
+    }
+    .hero p {
+        font-size: 1em;
+    }
+    .grid {
+        grid-template-columns: 1fr; /* Une seule colonne sur petits écrans */
+    }
+}
